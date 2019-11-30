@@ -1,7 +1,5 @@
 package swing;
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
@@ -12,14 +10,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
 
 public class login {
-
 	private JFrame frame;
 	private JTextField textField;
 	private JPasswordField passwordField;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -33,16 +27,10 @@ public class login {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public login() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
@@ -65,13 +53,11 @@ public class login {
 		textField.setBounds(142, 49, 101, 20);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
-		
-		
+				
 		passwordField = new JPasswordField();
 		passwordField.setBounds(142, 105, 101, 20);
 		frame.getContentPane().add(passwordField);
-		
-		
+				
 		JButton btnNewButton = new JButton("Register");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -87,13 +73,10 @@ public class login {
 				else
 				{
 					lblNewLabel.setText("not successfull");
-				}
-			
+				}			
 			}
 		});
 		btnNewButton.setBounds(79, 155, 89, 23);
-		frame.getContentPane().add(btnNewButton);
-		
-		
+		frame.getContentPane().add(btnNewButton);		
 	}
 }
