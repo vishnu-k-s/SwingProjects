@@ -1,7 +1,7 @@
+
+//SWING PROGRAM TO CALCULATE BODY MASS INDEX
 package swing;
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Color;
